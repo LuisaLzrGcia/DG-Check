@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #F2F3F4;
+}
+
+.contenedor {
+    padding: 0px 50px;
+}
+
+.caja{
+    background-color: white;
+    margin-top: 30px;
+}
+
+.titulo-conte{
+    background-color: #003456;
+    color: white;
+}
+
+.noLink{
+    text-decoration: none;
+}
+/*
+div{
+    border: 1px solid black;
+}*/
+/* Estilos con boopstrap*/
