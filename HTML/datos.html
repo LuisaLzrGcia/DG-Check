@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon">
     <title>Final</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
@@ -12,7 +13,7 @@
 
 <body class="">
     <main class="container-fluid contenedor">
-        <div class="caja">
+        <div class="caja shadow-lg">
             <div class="titulo-conte p-2">
                 <h2 class="text-center">Finalmente... </h1>
             </div>
@@ -30,7 +31,7 @@
                             F.1. Es usted...
                         </h5>
                     </div>
-                    <div class="repuestas mx-1 w-25 d-flex justify-content-between" id="respf1">
+                    <div class="repuestas mx-1 w-25 d-flex justify-content-between flex-wrap" id="respf1">
                         <div class="form-check py-1">
                             <input value="1" class="form-check-input" type="radio" name="pf1" id="flexRadioDefaultf11">
                             <label class="form-check-label" for="flexRadioDefaultf11">
@@ -53,393 +54,791 @@
                 </div>
 
                 <hr>
+                <div class="pregunta p1-2">
+                    <h5>
+                        F.2. ¿Cuál es su edad?
+                    </h5>
+                    <div class="repuestas mx-1 w-75 d-flex justify-content-between align-items-center flex-wrap"
+                        id="respf2">
+                        <div class="form-check py-1">
+                            <input value="1" class="form-check-input" type="radio" name="pf2" id="flexRadioDefaultf21">
+                            <label class="form-check-label" for="flexRadioDefaultf21">
+                                Menos de 25
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="2" class="form-check-input" type="radio" name="pf2" id="flexRadioDefaultf22">
+                            <label class="form-check-label" for="flexRadioDefaultf22">
+                                25 - 29
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="3" class="form-check-input" type="radio" name="pf2" id="flexRadioDefaultf23">
+                            <label class="form-check-label" for="flexRadioDefaultf23">
+                                30 - 39
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="4" class="form-check-input" type="radio" name="pf2" id="flexRadioDefaultf24">
+                            <label class="form-check-label" for="flexRadioDefaultf24">
+                                40 - 49
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="5" class="form-check-input" type="radio" name="pf2" id="flexRadioDefaultf25">
+                            <label class="form-check-label" for="flexRadioDefaultf25">
+                                50-59
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="6" class="form-check-input" type="radio" name="pf2" id="flexRadioDefaultf26">
+                            <label class="form-check-label" for="flexRadioDefaultf26">
+                                60 o más
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
                 <div>
                     <div class="pregunta p1-2">
                         <h5>
-                            F.2. ¿Cuál es su edad?
+                            F.3. ¿Cuál es su grado académico más alto?
                         </h5>
-                        <div class="repuestas mx-1 w-75 d-flex justify-content-between flex-wrap" id="respf2">
-                            <div class="form-check py-1">
-                                <input value="1" class="form-check-input" type="radio" name="pf2"
-                                    id="flexRadioDefaultf21">
-                                <label class="form-check-label" for="flexRadioDefaultf21">
-                                    Menos de 25
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input value="2" class="form-check-input" type="radio" name="pf2"
-                                    id="flexRadioDefaultf22">
-                                <label class="form-check-label" for="flexRadioDefaultf22">
-                                    25 - 29
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input value="3" class="form-check-input" type="radio" name="pf2"
-                                    id="flexRadioDefaultf23">
-                                <label class="form-check-label" for="flexRadioDefaultf23">
-                                    30 - 39
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input value="4" class="form-check-input" type="radio" name="pf2"
-                                    id="flexRadioDefaultf24">
-                                <label class="form-check-label" for="flexRadioDefaultf24">
-                                    40 - 49
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input value="5" class="form-check-input" type="radio" name="pf2"
-                                    id="flexRadioDefaultf25">
-                                <label class="form-check-label" for="flexRadioDefaultf25">
-                                    50-59
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input value="6" class="form-check-input" type="radio" name="pf2"
-                                    id="flexRadioDefaultf26">
-                                <label class="form-check-label" for="flexRadioDefaultf26">
-                                    60 o más
-                                </label>
-                            </div>
-                        </div>
                     </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.3. ¿Cuál es su grado académico más alto?
-                            </h5>
-                        </div>
-                        <div class="repuestas w-25" id="respf3">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción...</option>
-                                <option value="1">Licenciatura</option>
-                                <option value="2">Maestría</option>
-                                <option value="3">Doctorado</option>
-                            </select>
-                        </div>
+                    <div class="repuestas w-25">
+                        <select class="form-select" aria-label="Default select example" id="respf3">
+                            <option value="0" selected>Seleccione una opción...</option>
+                            <option value="1">Licenciatura</option>
+                            <option value="2">Maestría</option>
+                            <option value="3">Doctorado</option>
+                        </select>
                     </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.4. Incluyendo este curso académico ¿Cuántos años lleva trabajando como docente?
-                            </h5>
-                        </div>
-                        <div class="repuestas w-25" id="respf4">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción...</option>
-                                <option value="1">1 - 3</option>
-                                <option value="2">4 - 5</option>
-                                <option value="3">6 - 9</option>
-                                <option value="4">10 - 14</option>
-                                <option value="5">15 - 19</option>
-                                <option value="6">Más de 20</option>
-                                <option value="7">Prefiero no responder</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.5. ¿En cuál de las siguientes áreas enseña?
-                            </h5>
-                        </div>
-                        <div class="repuestas w-50" id="respf5">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción...</option>
-                                <option value="1">Ingeniería en Administración</option>
-                                <option value="2">Ingeniería en Gestión Empresarial</option>
-                                <option value="3">Ingeniería Industrial</option>
-                                <option value="4">Ingeniería en Animación Digital y Efectos Visuales</option>
-                                <option value="5">Ingeniería en Sistemas Computacionales</option>
-                                <option value="6">Ingeniería Informática </option>
-                                <option value="7">Ingeniería Eléctrica</option>
-                                <option value="8">Ingeniería Electrónica</option>
-                                <option value="9">Ingeniería Mecánica</option>
-                                <option value="10">Ingeniería Mecatrónica</option>
-                                <option value="11">Ingeniería Química </option>
-                                <option value="12">Ingeniería Bioquímica</option>
-                                <option value="13">Ingeniería Petrolera</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="pregunta">
-                        <div>
-                            <h5>
-                                F.6. ¿Tiene acreditado el Diplomado de Recursos Educativos en Ambientes Virtuales
-                                (DREAVA)
-                                del TecNM?
-                            </h5>
-                        </div>
-                        <div class="repuestas mx-1 d-flex bd-highlight" id="respf6">
-                            <div class="form-check py-1">
-                                <input value="1" class="form-check-input" type="radio" name="pf6"
-                                    id="flexRadioDefaultf61">
-                                <label class="form-check-label" for="flexRadioDefaultf61">
-                                    Si
-                                </label>
-                            </div>
-                            <div class="form-check py-1 mx-5">
-                                <input value="2" class="form-check-input" type="radio" name="pf6"
-                                    id="flexRadioDefaultf62">
-                                <label class="form-check-label" for="flexRadioDefaultf62">
-                                    No
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="pregunta">
-                        <div>
-                            <h5>
-                                F.7. ¿Ha participado como estudiante en las jornadas de capacitación en competencias
-                                digitales del TecNM?
-                            </h5>
-                        </div>
-                        <div class="repuestas mx-1 d-flex bd-highlight" id="respf7">
-                            <div class="form-check py-1">
-                                <input value="1" class="form-check-input" type="radio" name="pf7"
-                                    id="flexRadioDefaultf71">
-                                <label class="form-check-label" for="flexRadioDefaultf71">
-                                    Si
-                                </label>
-                            </div>
-                            <div class="form-check py-1 mx-5">
-                                <input value="2" class="form-check-input" type="radio" name="pf7"
-                                    id="flexRadioDefaultf72">
-                                <label class="form-check-label" for="flexRadioDefaultf72">
-                                    No
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="pregunta">
-                        <div>
-                            <h5>
-                                F.8. ¿Ha participado como instructor en las jornadas de capacitación en competencias
-                                digitales del TecNM?
-                            </h5>
-                        </div>
-                        <div class="repuestas mx-1 d-flex bd-highlight" id="respf8">
-                            <div class="form-check py-1">
-                                <input value="1" class="form-check-input" type="radio" name="pf8"
-                                    id="flexRadioDefaultf81">
-                                <label class="form-check-label" for="flexRadioDefaultf81">
-                                    Si
-                                </label>
-                            </div>
-                            <div class="form-check py-1 mx-5">
-                                <input value="2" class="form-check-input" type="radio" name="pf8"
-                                    id="flexRadioDefaultf82">
-                                <label class="form-check-label" for="flexRadioDefaultf82">
-                                    No
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.9. ¿Cuánto tiempo lleva utilizando tecnología en sus clases?
-                            </h5>
-                        </div>
-                        <div class="repuestas w-50" id="respf9">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción...</option>
-                                <option value="1">Todavía no he utilizado tecnología en mis clases</option>
-                                <option value="2">Menos de 1 año</option>
-                                <option value="3">1-3 años</option>
-                                <option value="4">4-5 años</option>
-                                <option value="5">6-9 años</option>
-                                <option value="6">10-14 años</option>
-                                <option value="7">15-19 años</option>
-                                <option value="8">20 años o más</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.10. ¿En qué porcentaje de sus clases ha utilizado tecnología o herramientas digitales
-                                en
-                                los últimos tres meses?
-                            </h5>
-                        </div>
-                        <div class="repuestas w-25" id="respf10">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccione una opción...</option>
-                                <option value="1">0-10%</option>
-                                <option value="2">11-25%</option>
-                                <option value="3">26-50%</option>
-                                <option value="4">51-75%</option>
-                                <option value="5">76-100%</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.11. ¿Qué herramientas digitales ha utilizado usted o sus estudiantes para enseñar y
-                                aprender?
-                            </h5>
-                        </div>
-                        <div class="repuestas w-100 d-flex" id="respf11">
-                            <div class="w-50">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp111">
-                                    <label class="form-check-label" for="resp111">
-                                        Presentaciones
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp112">
-                                    <label class="form-check-label" for="resp112">
-                                        Ver vídeos / escuchar audios
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp113">
-                                    <label class="form-check-label" for="resp113">
-                                        Crear vídeos / audios
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp114">
-                                    <label class="form-check-label" for="resp114">
-                                        Entornos de aprendizaje en línea
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp115">
-                                    <label class="form-check-label" for="resp115">
-                                        Cuestionarios o encuestas digitales
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="w-50">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp116">
-                                    <label class="form-check-label" for="resp116">
-                                        Aplicaciones o juegos interactivos
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp117">
-                                    <label class="form-check-label" for="resp117">
-                                        Carteles digitales, mapas mentales, herramientas de planificación
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp118">
-                                    <label class="form-check-label" for="resp118">
-                                        Blogs o wikis
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp119">
-                                    <label class="form-check-label" for="resp119">
-                                        Otros
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="resp1110">
-                                    <label class="form-check-label" for="resp1110">
-                                        Todavía no he usado ninguna herramienta digital en clase
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div>
-                        <div class="pregunta p1-2">
-                            <h5>
-                                F.12. ¿Cómo se describiría a sí mismo y al uso personal que hace de las tecnologías
-                                digitales?
-                            </h5>
-                        </div>
-                        <div class="repuestas text-center" id="respf10">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"> </th>
-                                        <th scope="col">Muy en desacuerdo</th>
-                                        <th scope="col">Desacuerdo</th>
-                                        <th scope="col">Ni de acuerdo ni en desacuerdo</th>
-                                        <th scope="col">De acuerdo </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="fondo-gris">
-                                        <th>Me resulta fácil trabajar con computadoras y otros dispositivos</th>
-                                        <td>
-                                            <div class="form-check d-flex justify-content-center align-items-center">
-                                                <div class="caja-input">
-                                                    <input value="1" class="form-check-input p-1" type="radio" name="pf12">
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-check d-flex justify-content-center align-items-center">
-                                                <input value="2" class="form-check-input p-1" type="radio" name="pf12">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-check d-flex justify-content-center align-items-center">
-                                                <input value="3" class="form-check-input p-1" type="radio" name="pf12">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-check d-flex justify-content-center align-items-center">
-                                                <input value="4" class="form-check-input p-1" type="radio" name="pf12">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>Utilizo internet de manera extensiva y competente</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Soy abierto y tengo curiosidad por nuevas aplicaciones,
-                                            programas y recursos</th>
-                                        <td>Larry the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Soy miembro de varias redes sociales </th>
-                                        <td>Larry the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
                 </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta p1-2">
+                        <h5>
+                            F.4. Incluyendo este curso académico ¿Cuántos años lleva trabajando como docente?
+                        </h5>
+                    </div>
+                    <div class="repuestas w-25">
+                        <select class="form-select" aria-label="Default select example" id="respf4">
+                            <option value="0" selected>Seleccione una opción...</option>
+                            <option value="1">1 - 3</option>
+                            <option value="2">4 - 5</option>
+                            <option value="3">6 - 9</option>
+                            <option value="4">10 - 14</option>
+                            <option value="5">15 - 19</option>
+                            <option value="6">Más de 20</option>
+                            <option value="7">Prefiero no responder</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta p1-2">
+                        <h5>
+                            F.5. ¿En cuál de las siguientes áreas enseña?
+                        </h5>
+                    </div>
+                    <div class="repuestas w-50">
+                        <select class="form-select" aria-label="Default select example" id="respf5">
+                            <option value="0" selected>Seleccione una opción...</option>
+                            <option value="1">Ingeniería en Administración</option>
+                            <option value="2">Ingeniería en Gestión Empresarial</option>
+                            <option value="3">Ingeniería Industrial</option>
+                            <option value="4">Ingeniería en Animación Digital y Efectos Visuales</option>
+                            <option value="5">Ingeniería en Sistemas Computacionales</option>
+                            <option value="6">Ingeniería Informática </option>
+                            <option value="7">Ingeniería Eléctrica</option>
+                            <option value="8">Ingeniería Electrónica</option>
+                            <option value="9">Ingeniería Mecánica</option>
+                            <option value="10">Ingeniería Mecatrónica</option>
+                            <option value="11">Ingeniería Química </option>
+                            <option value="12">Ingeniería Bioquímica</option>
+                            <option value="13">Ingeniería Petrolera</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="pregunta">
+                    <div>
+                        <h5>
+                            F.6. ¿Tiene acreditado el Diplomado de Recursos Educativos en Ambientes Virtuales
+                            (DREAVA)
+                            del TecNM?
+                        </h5>
+                    </div>
+                    <div class="repuestas mx-1 d-flex bd-highlight" id="respf6">
+                        <div class="form-check py-1">
+                            <input value="1" class="form-check-input" type="radio" name="pf6" id="flexRadioDefaultf61">
+                            <label class="form-check-label" for="flexRadioDefaultf61">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check py-1 mx-5">
+                            <input value="2" class="form-check-input" type="radio" name="pf6" id="flexRadioDefaultf62">
+                            <label class="form-check-label" for="flexRadioDefaultf62">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="pregunta">
+                    <div>
+                        <h5>
+                            F.7. ¿Ha participado como estudiante en las jornadas de capacitación en competencias
+                            digitales del TecNM?
+                        </h5>
+                    </div>
+                    <div class="repuestas mx-1 d-flex bd-highlight" id="respf7">
+                        <div class="form-check py-1">
+                            <input value="1" class="form-check-input" type="radio" name="pf7" id="flexRadioDefaultf71">
+                            <label class="form-check-label" for="flexRadioDefaultf71">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check py-1 mx-5">
+                            <input value="2" class="form-check-input" type="radio" name="pf7" id="flexRadioDefaultf72">
+                            <label class="form-check-label" for="flexRadioDefaultf72">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="pregunta">
+                    <div>
+                        <h5>
+                            F.8. ¿Ha participado como instructor en las jornadas de capacitación en competencias
+                            digitales del TecNM?
+                        </h5>
+                    </div>
+                    <div class="repuestas mx-1 d-flex bd-highlight" id="respf8">
+                        <div class="form-check py-1">
+                            <input value="1" class="form-check-input" type="radio" name="pf8" id="flexRadioDefaultf81">
+                            <label class="form-check-label" for="flexRadioDefaultf81">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check py-1 mx-5">
+                            <input value="2" class="form-check-input" type="radio" name="pf8" id="flexRadioDefaultf82">
+                            <label class="form-check-label" for="flexRadioDefaultf82">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta p1-2">
+                        <h5>
+                            F.9. ¿Cuánto tiempo lleva utilizando tecnología en sus clases?
+                        </h5>
+                    </div>
+                    <div class="repuestas w-50">
+                        <select class="form-select" aria-label="Default select example" id="respf9">
+                            <option value="0" selected>Seleccione una opción...</option>
+                            <option value="1">Todavía no he utilizado tecnología en mis clases</option>
+                            <option value="2">Menos de 1 año</option>
+                            <option value="3">1-3 años</option>
+                            <option value="4">4-5 años</option>
+                            <option value="5">6-9 años</option>
+                            <option value="6">10-14 años</option>
+                            <option value="7">15-19 años</option>
+                            <option value="8">20 años o más</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta p1-2">
+                        <h5>
+                            F.10. ¿En qué porcentaje de sus clases ha utilizado tecnología o herramientas digitales
+                            en
+                            los últimos tres meses?
+                        </h5>
+                    </div>
+                    <div class="repuestas w-25">
+                        <select class="form-select" aria-label="Default select example" id="respf10">
+                            <option value="0" selected>Seleccione una opción...</option>
+                            <option value="1">0-10%</option>
+                            <option value="2">11-25%</option>
+                            <option value="3">26-50%</option>
+                            <option value="4">51-75%</option>
+                            <option value="5">76-100%</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta p1-2">
+                        <h5>
+                            F.11. ¿Qué herramientas digitales ha utilizado usted o sus estudiantes para enseñar y
+                            aprender?
+                        </h5>
+                    </div>
+                    <div class="repuestas w-100 d-flex" id="respf11">
+                        <div class="w-50">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="resp111">
+                                <label class="form-check-label" for="resp111">
+                                    Presentaciones
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="2" id="resp112">
+                                <label class="form-check-label" for="resp112">
+                                    Ver vídeos / escuchar audios
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="3" id="resp113">
+                                <label class="form-check-label" for="resp113">
+                                    Crear vídeos / audios
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="4" id="resp114">
+                                <label class="form-check-label" for="resp114">
+                                    Entornos de aprendizaje en línea
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="5" id="resp115">
+                                <label class="form-check-label" for="resp115">
+                                    Cuestionarios o encuestas digitales
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="6" id="resp116">
+                                <label class="form-check-label" for="resp116">
+                                    Aplicaciones o juegos interactivos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="7" id="resp117">
+                                <label class="form-check-label" for="resp117">
+                                    Carteles digitales, mapas mentales, herramientas de planificación
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="8" id="resp118">
+                                <label class="form-check-label" for="resp118">
+                                    Blogs o wikis
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="9" id="resp119">
+                                <label class="form-check-label" for="resp119">
+                                    Otros
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="10" id="resp1110">
+                                <label class="form-check-label" for="resp1110">
+                                    Todavía no he usado ninguna herramienta digital en clase
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta p1-2">
+                        <h5>
+                            F.12. ¿Cómo se describiría a sí mismo y al uso personal que hace de las tecnologías
+                            digitales?
+                        </h5>
+                    </div>
+                    <div class="repuestas text-center">
+                        <div class="grid-css">
+                            <div class="linea-abajo"></div>
+                            <div class="grid-opc fw-bolder linea-abajo">
+                                <div class="d-flex justify-content-center align-items-center p-1">
+                                    Muy en desacuerdo
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center p-1">
+                                    Desacuerdo
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center p-1">
+                                    Ni de acuerdo ni en desacuerdo
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center p-1">
+                                    De acuerdo
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center align-items-center fondo-gris fw-bold linea-abajo p-1">
+                                Me resulta fácil trabajar con computadoras y otros dispositivos
+                            </div>
+                            <div class="grid-opc fondo-gris linea-abajo" id="respf121">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="1" class="form-check-input" type="radio" name="pf121">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="2" class="form-check-input" type="radio" name="pf121">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="3" class="form-check-input" type="radio" name="pf121">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="4" class="form-check-input" type="radio" name="pf121">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center fw-bold linea-abajo p-1">
+                                Utilizo internet de manera extensiva y competente
+                            </div>
+                            <div class="grid-opc linea-abajo" id="respf122">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="1" class="form-check-input " type="radio" name="pf122">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="2" class="form-check-input" type="radio" name="pf122">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="3" class="form-check-input" type="radio" name="pf122">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="4" class="form-check-input" type="radio" name="pf122">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-center align-items-center fondo-gris fw-bold linea-abajo p-1">
+                                Soy abierto y tengo curiosidad por nuevas aplicaciones, programas y recursos
+                            </div>
+                            <div class="grid-opc fondo-gris linea-abajo" id="respf123">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="1" class="form-check-input p-1" type="radio" name="pf123">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="2" class="form-check-input" type="radio" name="pf123">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="3" class="form-check-input" type="radio" name="pf123">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="4" class="form-check-input" type="radio" name="pf123">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center fw-bold linea-abajo p-1">
+                                Soy miembro de varias redes sociales
+                            </div>
+                            <div class="grid-opc linea-abajo" id="respf124">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="1" class="form-check-input p-1" type="radio" name="pf124">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="2" class="form-check-input" type="radio" name="pf124">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="3" class="form-check-input" type="radio" name="pf124">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check d-flex justify-content-center align-items-center">
+                                        <input value="4" class="form-check-input" type="radio" name="pf124">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+                <div>
+                    <div class="pregunta">
+                        <h5>
+                            F.13. Las siguientes 2 preguntas tratan sobre diversos aspectos de las instituciones que
+                            influyen en las competencias en las instituciones indicada en esta pregunta.
+                        </h5>
+                    </div>
+                    <div class="pregunta px-3">
+                        <hr>
+                        <div>
+                            <div class="pregunta p1-2">
+                                <h5>
+                                    F.13.1 ¿En qué medida su entorno de trabajo cumple con los siguientes criterios?
+                                </h5>
+                            </div>
+                            <div class="repuestas text-center">
+                                <div class="grid-css">
+                                    <div class="linea-abajo"></div>
+                                    <div class="grid-opc fw-bolder linea-abajo">
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            Muy en desacuerdo
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            Desacuerdo
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            Ni de acuerdo ni en desacuerdo
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            De acuerdo
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fondo-gris fw-bold linea-abajo p-1">
+                                        La institucion promueve la integración de las tecnologías digitales en la
+                                        enseñanza
+                                    </div>
+                                    <div class="grid-opc fondo-gris linea-abajo" id="respf1311">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input" type="radio" name="respf1311">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1311">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1311">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1311">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fw-bold linea-abajo p-1">
+                                        La institución invierte en actualizar y mejorar la infraestructura técnica
+                                    </div>
+                                    <div class="grid-opc linea-abajo" id="respf1312">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input " type="radio"
+                                                    name="respf1312">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1312">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1312">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1312">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fondo-gris fw-bold linea-abajo p-1">
+                                        La institución proporciona el soporte técnico necesario
+                                    </div>
+                                    <div class="grid-opc fondo-gris linea-abajo" id="respf1313">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input p-1" type="radio"
+                                                    name="respf1313">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1313">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1313">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1313">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fw-bold linea-abajo p-1">
+                                        Los estudiantes tienen acceso a dispositivos digitales
+                                    </div>
+                                    <div class="grid-opc linea-abajo" id="respf1314">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input p-1" type="radio"
+                                                    name="respf1314">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1314">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1314">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1314">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fondo-gris fw-bold linea-abajo p-1">
+                                        La conexión a internet de la institución es fiable y rápida
+                                    </div>
+                                    <div class="grid-opc fondo-gris linea-abajo" id="respf1315">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input p-1" type="radio"
+                                                    name="respf1315">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1315">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1315">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1315">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fw-bold linea-abajo p-1">
+                                        La institución apoya el desarrollo de mi competencia digital, por ejemplo, a
+                                        través de actividades de desarrollo profesional continuo.
+                                    </div>
+                                    <div class="grid-opc linea-abajo" id="respf1316">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input p-1" type="radio"
+                                                    name="respf1316">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1316">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1316">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1316">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pregunta px-3">
+
+                        <hr>
+                        <div>
+                            <div class="pregunta p1-2">
+                                <h5>
+                                    F.13.2 ¿En qué medida su entorno de trabajo cumple con los siguientes criterios?
+                                </h5>
+                            </div>
+                            <div class="repuestas text-center">
+                                <div class="grid-css">
+                                    <div class="linea-abajo"></div>
+                                    <div class="grid-opc fw-bolder linea-abajo">
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            Muy en desacuerdo
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            Desacuerdo
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            Ni de acuerdo ni en desacuerdo
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center p-1">
+                                            De acuerdo
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fondo-gris fw-bold linea-abajo p-1">
+                                        Pizarras interactivas, proyectores o medios de presentación similares están
+                                        disponibles en las aulas que enseño
+                                    </div>
+                                    <div class="grid-opc fondo-gris linea-abajo" id="respf1321">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input" type="radio" name="respf1321">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1321">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1321">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1321">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-center align-items-center fw-bold linea-abajo p-1">
+                                        Muchos colegas utilizan medios digitales en sus clases
+                                    </div>
+                                    <div class="grid-opc linea-abajo" id="respf1322">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="1" class="form-check-input " type="radio" name="respf1322">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="2" class="form-check-input" type="radio" name="respf1322">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="3" class="form-check-input" type="radio" name="respf1322">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="form-check d-flex justify-content-center align-items-center">
+                                                <input value="4" class="form-check-input" type="radio" name="respf1322">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="pregunta p1-2">
+                    <h5>
+                        Percepción Final. ¿Cómo evalúa su competencia digital docente como profesor ahora, después de
+                        responder al cuestionario? Asigne un nivel de competencia de A1 a C2, donde A1 es más bajo y C2
+                        el más alto.
+                    </h5>
+                    <div class="repuestas mx-1 w-100 d-flex justify-content-evenly align-items-center flex-wrap"
+                        id="respfinal">
+                        <div class="form-check py-1">
+                            <input value="1" class="form-check-input" type="radio" name="pf2" id="final1">
+                            <label class="form-check-label" for="final1">
+                                A1: Principiante
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="2" class="form-check-input" type="radio" name="pf2" id="final2">
+                            <label class="form-check-label" for="final2">
+                                A2: Explorador
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="3" class="form-check-input" type="radio" name="pf2" id="final3">
+                            <label class="form-check-label" for="final3">
+                                B1: Integrador
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="4" class="form-check-input" type="radio" name="pf2" id="final4">
+                            <label class="form-check-label" for="final4">
+                                B2: Experto
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="5" class="form-check-input" type="radio" name="pf2" id="final5">
+                            <label class="form-check-label" for="final5">
+                                C1: Líder
+                            </label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input value="6" class="form-check-input" type="radio" name="pf2" id="final6">
+                            <label class="form-check-label" for="final6">
+                                C2: Pionero
+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -447,8 +846,8 @@
 
     <a id="bttnA6" data-bs-toggle="modal" href="#exampleModalToggleA6" role="button" class="noLink">
         <div class="btn-analizar d-flex justify-content-center py-5">
-            <button type="button" class="btn btn-info" onclick="validarArea6()">
-                Siguiente
+            <button type="button" class="btn btn-info" onclick="validarDatos()">
+                Finalizar
             </button>
         </div>
     </a>
