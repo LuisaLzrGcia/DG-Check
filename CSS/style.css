@@ -5,6 +5,14 @@ body {
     background-color: #F2F3F4;
 }
 
+.caja-input:hover{
+    background-color: black;
+}
+
+.fondo-gris{
+    background-color: #F2F3F4;
+}
+
 .contenedor {
     padding: 0px 50px;
 }
